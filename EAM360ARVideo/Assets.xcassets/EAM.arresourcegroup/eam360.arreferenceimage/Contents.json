@@ -2,7 +2,7 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "eam360.jpeg"
+      "filename" : "eam360.png"
     }
   ],
   "info" : {
@@ -10,6 +10,6 @@
     "author" : "xcode"
   },
   "properties" : {
-    "width" : 0.10133333333333333
+    "width" : 0.11863953488372093
   }
 }
