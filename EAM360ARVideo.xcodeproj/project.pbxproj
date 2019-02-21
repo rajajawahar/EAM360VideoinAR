@@ -13,6 +13,7 @@
 		AC746F3121774597001B2B8F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC746F2F21774597001B2B8F /* Main.storyboard */; };
 		AC746F3321774598001B2B8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC746F3221774598001B2B8F /* Assets.xcassets */; };
 		AC746F3621774598001B2B8F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC746F3421774598001B2B8F /* LaunchScreen.storyboard */; };
+		AC8DA13D221F0E6900E56A0F /* eam.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = AC8DA13C221F0E6900E56A0F /* eam.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		AC746F3221774598001B2B8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC746F3521774598001B2B8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC746F3721774598001B2B8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC8DA13C221F0E6900E56A0F /* eam.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = eam.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		AC746F2821774597001B2B8F /* EAM360ARVideo */ = {
 			isa = PBXGroup;
 			children = (
+				AC8DA13C221F0E6900E56A0F /* eam.mp4 */,
 				AC746F2921774597001B2B8F /* AppDelegate.swift */,
 				AC746F2B21774597001B2B8F /* art.scnassets */,
 				AC746F2D21774597001B2B8F /* ViewController.swift */,
@@ -127,6 +130,7 @@
 			files = (
 				AC746F2C21774597001B2B8F /* art.scnassets in Resources */,
 				AC746F3621774598001B2B8F /* LaunchScreen.storyboard in Resources */,
+				AC8DA13D221F0E6900E56A0F /* eam.mp4 in Resources */,
 				AC746F3321774598001B2B8F /* Assets.xcassets in Resources */,
 				AC746F3121774597001B2B8F /* Main.storyboard in Resources */,
 			);

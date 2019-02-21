@@ -36,7 +36,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             configuration.maximumNumberOfTrackedImages = 1
             print("Images Found")
         }
-        
         // Run the view's session
         sceneView.session.run(configuration)
     }
@@ -53,15 +52,36 @@ class ViewController: UIViewController, ARSCNViewDelegate {
     
     func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
         let node = SCNNode()
-        if let imageAnchor = anchor as? ARImageAnchor{
+        if let imageAnchor = anchor as? ARImageAnchor {
+            
+            let videoNode = SKVideoNode(fileNamed: "eam.mp4")
+            
+            videoNode.play()
+            
+            let videoScene = SKScene(size: CGSize(width: 480, height: 360))
+            
+            videoNode.position = CGPoint(x: videoScene.size.width / 2, y: videoScene.size.height / 2)
+            videoNode.yScale = -1.0
+            videoScene.addChild(videoNode)
+            
             
             let plane = SCNPlane(width: imageAnchor.referenceImage.physicalSize.width, height: imageAnchor.referenceImage.physicalSize.height)
-            plane.firstMaterial?.diffuse.contents = UIColor(white: 1.0, alpha: 0.5)
+            
+            plane.firstMaterial?.diffuse.contents = videoScene
+            
             let planeNode = SCNNode(geometry: plane)
-            planeNode.eulerAngles.x = -.pi/2
+            
+            planeNode.eulerAngles.x = -.pi / 2
+            
             node.addChildNode(planeNode)
+            
         }
         return node
+    }
+    
+    func playVideo(){
+        let videoNode = SKVideoNode(fileNamed: "eam360.mp4")
+        videoNode.play()
     }
     
     
